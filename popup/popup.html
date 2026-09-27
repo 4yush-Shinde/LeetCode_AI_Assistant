@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LeetCode AI Assistant</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <span class="title">LeetCode AI Assistant</span>
+    </div>
+
+    <div class="status-row">
+      <span class="status-dot" id="statusDot"></span>
+      <span id="statusText">Checking...</span>
+    </div>
+
+    <div class="info-row" id="problemRow" hidden>
+      <span class="label">Current problem:</span>
+      <span id="problemTitle">—</span>
+    </div>
+
+    <button id="openOptionsBtn" type="button">Open Settings</button>
+
+    <p class="footer-note" id="footerNote"></p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #1a1a1a;
+  color: #e8e8e8;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px 20px 40px;
+}
+
+h1 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.field {
+  margin-bottom: 18px;
+}
+
+.field label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.field input[type="password"],
+.field input[type="text"],
+.field select {
+  width: 100%;
+  padding: 8px 10px;
+  background: #2a2a2a;
+  border: 1px solid #3d3d3d;
+  border-radius: 5px;
+  color: #e8e8e8;
+  font-size: 13px;
+}
+
+.field input[type="password"] {
+  width: calc(100% - 70px);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#toggleVisibility {
+  width: 60px;
+  margin-left: 6px;
+  padding: 8px 0;
+  background: #2f2f2f;
+  border: 1px solid #3d3d3d;
+  border-radius: 5px;
+  color: #e8e8e8;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.checkbox-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-field label {
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+.hint {
+  font-size: 11px;
+  color: #888;
+  margin-top: 5px;
+  line-height: 1.4;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.actions button {
+  padding: 9px 16px;
+  border-radius: 5px;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#saveBtn {
+  background: #4a8cff;
+  color: #fff;
+}
+
+#saveBtn:hover {
+  background: #3a7ce0;
+}
+
+.secondary {
+  background: #2f2f2f;
+  color: #e8e8e8;
+  border: 1px solid #3d3d3d !important;
+}
+
+.secondary:hover {
+  background: #3a3a3a;
+}
+
+#status {
+  margin-top: 14px;
+  font-size: 12px;
+  min-height: 16px;
+}
+
+#status.success {
+  color: #6fcf97;
+}
+
+#status.error {
+  color: #e57373;
+}

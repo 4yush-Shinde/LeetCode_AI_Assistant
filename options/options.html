@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LeetCode AI Assistant — Settings</title>
+  <link rel="stylesheet" href="options.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>LeetCode AI Assistant</h1>
+
+    <section class="field">
+      <label for="apiKey">Gemini API Key</label>
+      <input type="password" id="apiKey" placeholder="AIza..." autocomplete="off" />
+      <button id="toggleVisibility" type="button">Show</button>
+      <p class="hint">Stored locally in this browser only. Sent only to generativelanguage.googleapis.com.</p>
+    </section>
+
+    <section class="field">
+      <label for="model">Model</label>
+      <select id="model">
+        <option value="gemini-3.5-flash-lite" selected>Gemini 3.5 Flash-Lite</option>
+        <option value="gemini-flash-lite-latest">Gemini Flash-Lite (latest)</option>
+        <option value="gemini-2.5-pro">Gemini 2.5 Pro</option>
+      </select>
+    </section>
+
+    <section class="field">
+      <label for="maxHintLevel">Max hint escalation level</label>
+      <select id="maxHintLevel">
+        <option value="1">1 — vague direction only</option>
+        <option value="2" selected>2 — narrower strategy</option>
+        <option value="3">3 — high-level steps</option>
+      </select>
+      <p class="hint">Caps how far repeated "Give Hint" clicks escalate before it stops giving more.</p>
+    </section>
+
+    <section class="field checkbox-field">
+      <input type="checkbox" id="cacheEnabled" checked />
+      <label for="cacheEnabled">Cache responses per problem (avoids repeat API calls/cost)</label>
+    </section>
+
+    <div class="actions">
+      <button id="saveBtn" type="button">Save</button>
+      <button id="clearCacheBtn" type="button" class="secondary">Clear Cache</button>
+    </div>
+
+    <p id="status" role="status"></p>
+  </div>
+
+  <script type="module" src="options.js"></script>
+</body>
+</html>
